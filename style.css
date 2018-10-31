@@ -1,0 +1,100 @@
+.sun-wrapper {
+	height: 600px;
+	width: 450px;
+	overflow: hidden;
+	transition: background 4s ease-in-out;
+	background-color: lightblue;
+	margin: auto;
+}
+
+.sun-wrapper:hover {
+	background-color: transparent blue;
+}
+
+.sun-wrapper:hover .sun {
+	background-color: lightblue;
+	transform: translateX(600px);
+}
+
+.sun-wrapper:hover .sun1 {
+	background-color: purple;
+	transform: translateX(600px);
+}
+
+.sun-wrapper:hover .sun2 {
+	background-color: purple;
+	transform: translateY(600px);
+}
+
+.sun-wrapper:hover .sun3 {
+	background-color: lightblue;
+	transform: translateY(600px);
+}
+
+.sun {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 3px;
+	transition-property: background-color, transform; 
+	transition-duration: 3s, 3s;
+	transition-timing-function: ease-in-out;
+}
+
+.sun1 {
+	width: 30px;
+	height: 30px;
+	background-color: lightblue;
+	border-radius: 3px;
+	transition-property: background-color, transform; 
+	transition-duration: 3s, 3s;
+	transition-timing-function: ease-in-out;
+}
+
+.sun2 {
+	width: 30px;
+	height: 30px;
+	background-color: lightblue;
+	border-radius: 3px;
+	transition-property: background-color, transform; 
+	transition-duration: 3s, 3s;
+	transition-timing-function: ease-in-out, linear;
+}
+
+.sun3 {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 3px;
+	transition-property: background-color, transform; 
+	transition-duration: 3s, 3s;
+	transition-timing-function: ease-in-out, linear;
+}
+
+@keyframes riseandset {
+	from {
+		transform: translateY(-600px);
+	}
+
+	to {
+		transform: translateY(600px);
+		background-color: blue;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
